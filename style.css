@@ -22,7 +22,7 @@
 
 }
 
-.google-btn{
+.google-btn, .twitter-btn{
     background-color: #1a73e8;
     color: white;
     border: none;
@@ -34,12 +34,12 @@
     cursor: pointer; 
 }
 
-.google-btn:hover{
+.google-btn, .twitter-btn:hover{
     opacity: 0.75;
     
 }
 
-.google-btn picture{
+.google-btn picture, .twitter-btn picture{
     width: 35px;
     height: 35px;
     background-color: white;
@@ -48,23 +48,22 @@
     align-items: center;
     justify-content: center;
 }
-.google-btn picture img{
+.google-btn picture img, .twitter-btn picture img {
     width: 75%; 
 }
 
-.google-btn span{
+.google-btn span, .twitter-btn span{
     color: white;
     padding: 15px;
 }
 
 
 
-.google-btn:hover{
-    opacity: 0.75;
-    
+.google-btn:hover, .twitter-btn:hover{
+    opacity: 0.75;  
 }
 
-.google-btn picture{
+.google-btn picture, .twitter-btn picture{
     width: 35px;
     height: 35px;
     background-color: white;
@@ -73,75 +72,14 @@
     align-items: center;
     justify-content: center;
 }
-.google-btn picture img{
+.google-btn picture img, .twitter-btn picture img{
     width: 75%; 
 }
 
-.google-btn span{
+.google-btn span, .twitter-btn span{
     color: white;
     padding: 15px;
 }
-.twitter-btn{
-    background-color: #1a73e8;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    cursor: pointer;
-}
-
-
-.twitter-btn:hover{
-    opacity: 0.75;
-    
-}
-
-.twitter-btn picture{
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.twitter-btn picture img{
-    width: 75%; 
-}
-
-.twitter-btn span{
-    color: white;
-    padding: 15px;
-}
-
-
-
-.twitter-btn:hover{
-    opacity: 0.75;
-    
-}
-
-.twitter-btn picture{
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.twitter-btn picture img{
-    width: 75%; 
-}
-
-.twitter-btn span{
-    color: white;
-    padding: 15px;
-}
-
 
 .separator hr{
     display: flex;
