@@ -1,0 +1,389 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 32d73ba..42507f1 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -5,7 +5,7 @@[m
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+     <title>Login Form</title>[m
+[31m-    <link rel="stylesheet" href="../CSS/login.css">[m
+[32m+[m[32m    <link rel="stylesheet" href="../CSS/style.css">[m
+     [m
+ </head>[m
+ [m
+[1mdiff --git a/login.css b/login.css[m
+[1mdeleted file mode 100644[m
+[1mindex 73158a3..0000000[m
+[1m--- a/login.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,370 +0,0 @@[m
+[31m-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');[m
+[31m-[m
+[31m-*{[m
+[31m-    font-family: 'Karla', sans-serif[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-.container{[m
+[31m-    margin: auto;[m
+[31m-    display: flex;[m
+[31m-    flex-direction: column;[m
+[31m-    align-items: center;[m
+[31m-    justify-content: center;[m
+[31m-    gap: 30px;[m
+[31m-    width: 450px;[m
+[31m-    color: white;[m
+[31m-}[m
+[31m-.botones{[m
+[31m-    align-self: flex-start;[m
+[31m-    display: flex;[m
+[31m-    gap: 30px;[m
+[31m-[m
+[31m-}[m
+[31m-[m
+[31m-.google-btn{[m
+[31m-    background-color: #1a73e8;[m
+[31m-    color: white;[m
+[31m-    border: none;[m
+[31m-    border-radius: 5px;[m
+[31m-    height: 40px;[m
+[31m-    display: flex;[m
+[31m-    align-items: center;[m
+[31m-    padding: 2px;[m
+[31m-    cursor: pointer; [m
+[31m-}[m
+[31m-[m
+[31m-.google-btn:hover{[m
+[31m-    opacity: 0.75;[m
+[31m-    [m
+[31m-}[m
+[31m-[m
+[31m-.google-btn picture{[m
+[31m-    width: 35px;[m
+[31m-    height: 35px;[m
+[31m-    background-color: white;[m
+[31m-    border-radius: 2px;[m
+[31m-    display: flex;[m
+[31m-    align-items: center;[m
+[31m-    justify-content: center;[m
+[31m-}[m
+[31m-.google-btn picture img{[m
+[31m-    width: 75%; [m
+[31m-}[m
+[31m-[m
+[31m-.google-btn span{[m
+[31m-    color: white;[m
+[31m-    padding: 15px;[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-.google-btn:hover{[m
+[31m-    opacity: 0.75;[m
+[31m-    [m
+[31m-}[m
+[31m-[m
+[31m-.google-btn picture{[m
+[31m-    width: 35px;[m
+[31m-    height: 35px;[m
+[31m-    background-color: white;[m
+[31m-    border-radius: 2px;[m
+[31m-    display: flex;[m
+[31m-    align-items: center;[m
+[31m-    justify-content: center;[m
+[31m-}[m
+[31m-.google-btn picture img{[m
+[31m-    width: 75%; [m
+[31m-}[m
+[31m-[m
+[31m-.google-btn span{[m
+[31m-    color: white;[m
+[31m-    padding: 15px;[m
+[31m-}[m
+[31m-.twitter-btn{[m
+[31m-    background-color: #1a73e8;[m
+[31m-    color: white;[m
+[31m-    border: none;[m
+[31m-    border-radius: 5px;[m
+[31m-    height: 40px;[m
+[31m-    display: flex;[m
+[31m-    align-items: center;[m
+[31m-    padding: 2px;[m
+[31m-    cursor: pointer;[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-.twitter-btn:hover{[m
+[31m-    opacity: 0.75;[m
+[31m-    [m
+[31m-}[m
+[31m-[m
+[31m-.twitter-btn picture{[m
+[31m-    width: 35px;[m
+[31m-    height: 35px;[m
+[31m-    background-color: white;[m
+[31m-    border-radius: 2px;[m
+[31m-    display: flex;[m
+[31m-    align-items: center;[m
+[31m-    justify-content: center;[m
+[31m-}[m
+[31m-.twitter-btn picture img{[m
+[31m-    width: 75%; [m
+[31m-}[m
+[31m-[m
+[31m-.twitter-btn span{[m
+[31m-    color: white;[m
+[31m-    padding: 15px;[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-.twitter-btn:hover{[m
+[31m-    opacity: 0.75;[m
+[31m-    [m
+[31m-}[m
+[31m-[m
+[31m-.twitter-btn picture{[m
+[31m-    width: 35px;[m
+[31m-    height: 35px;[m
+[31m-    background-color: white;[m
+[31m-    border-radius: 2px;[m
+[31m-    display: flex;[m
+[31m-    align-items: center;[m
+[31m-    justify-content: center;[m
+[31m-}[m
+[31m-.twitter-btn picture img{[m
+[31m-    width: 75%; [m
+[31m-}[m
+[31m-[m
+[31m-.twitter-btn span{[m
+[31m-    color: white;[m
+[31m-    padding: 15px;[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-.separator hr{[m
+[31m-    display: flex;[m
+[31m-    width: 100%;[m
+[31m-    gap: 15px;[m
+[31m-}[m
+[31m-[m
+[31m-.separator{[m
+[31m-    display: flex;[m
+[31m-    width: 100%;[m
+[31m-    gap: 15px;[m
+[31m-}[m
+[31m-.separator hr{[m
+[31m-    flex-grow: 1;[m
+[31m-    border: none;[m
+[31m-    border-top: 1px solid #ccc;[m
+[31m-}[m
+[31m-.separator span{[m
+[31m-    color:#8b8b8b[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-.section-inputs{[m
+[31m-    display: flex;[m
+[31m-    gap: 30px;[m
+[31m-    width: 100%;[m
+[31m-}[m
+[31m-form{[m
+[31m-    display: flex;[m
+[31m-    flex-direction: column;[m
+[31m-    align-items:stretch;[m
+[31m-    gap: 30px;[m
+[31m-}[m
+[31m-[m
+[31m-label{[m
+[31m-    [m
+[31m-    display: flex;[m
+[31m-    flex-direction: column;[m
+[31m-    gap: 5px;[m
+[31m-    color: white;[m
+[31m-}[m
+[31m-[m
+[31m-label span{[m
+[31m-    font-weight: 700;[m
+[31m-}[m
+[31m-[m
+[31m-.section-inputs label input{[m
+[31m-    width: 80%;[m
+[31m-    background-color: #212121;[m
+[31m-    border:none;[m
+[31m-    padding:10px 20px ;[m
+[31m-    border-radius: 10px;[m
+[31m-    outline: none;[m
+[31m-    font-size: 14pt;[m
+[31m-}[m
+[31m-label input{[m
+[31m-    background-color: #212121;[m
+[31m-    color: white;[m
+[31m-    border:none;[m
+[31m-    padding:10px 20px ;[m
+[31m-    border-radius: 10px;[m
+[31m-    outline: none;[m
+[31m-    font-size: 14pt;[m
+[31m-    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;[m
+[31m-}[m
+[31m-label input:hover{[m
+[31m-    background-color: #404540;[m
+[31m-    border:solid 1px white;[m
+[31m-    box-shadow: 0 0 4px #eb50ff4f;[m
+[31m-}[m
+[31m-[m
+[31m-label input:focus{[m
+[31m-    background-color: #404540;[m
+[31m-    border:solid 1px #f3f3f4;[m
+[31m-    box-shadow: 0 0 4px #eb50ff4f;[m
+[31m-}[m
+[31m-.checkbox-label{[m
+[31m-    display: flex;[m
+[31m-    flex-direction: row;[m
+[31m-   [m
+[31m-}[m
+[31m-.checkbox-label input [type="checkbox"]{[m
+[31m-    width: 20px;[m
+[31m-    [m
+[31m-}[m
+[31m-.checkbox-label span{[m
+[31m-    font-weight: 400;[m
+[31m-    color: white;[m
+[31m-}[m
+[31m-.submit-btn{[m
+[31m-    background-color: #ea4c89;[m
+[31m-    color: white;[m
+[31m-    font-weight: 500;[m
+[31m-    font-size: 14pt;[m
+[31m-    text-align: center;[m
+[31m-    padding: 15px;[m
+[31m-    border: none;[m
+[31m-    border-radius: 10px;[m
+[31m-    [m
+[31m-}[m
+[31m-.submit-btn:hover{[m
+[31m-    cursor: pointer;[m
+[31m-    opacity: 75%;[m
+[31m-}[m
+[31m-[m
+[31m-/* fondo*/[m
+[31m-body{[m
+[31m-    background: #161717;  [m
+[31m-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  [m
+[31m-    width: 100%;[m
+[31m-    height:100vh;[m
+[31m-}[m
+[31m-[m
+[31m-.circles{[m
+[31m-    top: 0;[m
+[31m-    left: 0;[m
+[31m-    width: 100%;[m
+[31m-    height: 100%;[m
+[31m-    overflow: hidden;[m
+[31m-}[m
+[31m-[m
+[31m-.circles li{[m
+[31m-    position:fixed;[m
+[31m-    display: block;[m
+[31m-    list-style: none;[m
+[31m-    width: 20px;[m
+[31m-    height: 20px;[m
+[31m-    background: rgba(255, 255, 255, 0.2);[m
+[31m-    animation: animate 25s linear infinite;[m
+[31m-    bottom: -150px;[m
+[31m-    [m
+[31m-}[m
+[31m-[m
+[31m-.circles li:nth-child(1){[m
+[31m-    left: 25%;[m
+[31m-    width: 80px;[m
+[31m-    height: 80px;[m
+[31m-    animation-delay: 0s;[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-.circles li:nth-child(2){[m
+[31m-    left: 10%;[m
+[31m-    width: 20px;[m
+[31m-    height: 20px;[m
+[31m-    animation-delay: 2s;[m
+[31m-    animation-duration: 12s;[m
+[31m-}[m
+[31m-[m
+[31m-.circles li:nth-child(3){[m
+[31m-    left: 70%;[m
+[31m-    width: 20px;[m
+[31m-    height: 20px;[m
+[31m-    animation-delay: 4s;[m
+[31m-}[m
+[31m-[m
+[31m-.circles li:nth-child(4){[m
+[31m-    left: 40%;[m
+[31m-    width: 60px;[m
+[31m-    height: 60px;[m
+[31m-    animation-delay: 0s;[m
+[31m-    animation-duration: 18s;[m
+[31m-}[m
+[31m-[m
+[31m-.circles li:nth-child(5){[m
+[31m-    left: 65%;[m
+[31m-    width: 20px;[m
+[31m-    height: 20px;[m
+[31m-    animation-delay: 0s;[m
+[31m-}[m
+[31m-[m
+[31m-.circles li:nth-child(6){[m
+[31m-    left: 75%;[m
+[31m-    width: 110px;[m
+[31m-    height: 110px;[m
+[31m-    animation-delay: 3s;[m
+[31m-}[m
+[31m-[m
+[31m-.circles li:nth-child(7){[m
+[31m-    left: 35%;[m
+[31m-    width: 150px;[m
+[31m-    height: 150px;[m
+[31m-    animation-delay: 7s;[m
+[31m-}[m
+[31m-[m
+[31m-.circles li:nth-child(8){[m
+[31m-    left: 50%;[m
+[31m-    width: 25px;[m
+[31m-    height: 25px;[m
+[31m-    animation-delay: 15s;[m
+[31m-    animation-duration: 45s;[m
+[31m-}[m
+[31m-[m
+[31m-.circles li:nth-child(9){[m
+[31m-    left: 20%;[m
+[31m-    width: 15px;[m
+[31m-    height: 15px;[m
+[31m-    animation-delay: 2s;[m
+[31m-    animation-duration: 35s;[m
+[31m-}[m
+[31m-[m
+[31m-.circles li:nth-child(10){[m
+[31m-    left: 85%;[m
+[31m-    width: 150px;[m
+[31m-    height: 150px;[m
+[31m-    animation-delay: 0s;[m
+[31m-    animation-duration: 11s;[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-@keyframes animate {[m
+[31m-[m
+[31m-    0%{[m
+[31m-        transform: translateY(0) rotate(0deg);[m
+[31m-        opacity: 1;[m
+[31m-        border-radius: 0;[m
+[31m-    }[m
+[31m-[m
+[31m-    100%{[m
+[31m-        transform: translateY(-1000px) rotate(720deg);[m
+[31m-        opacity: 0;[m
+[31m-        border-radius: 50%;[m
+[31m-    }[m
+[31m-[m
+[31m-}[m
